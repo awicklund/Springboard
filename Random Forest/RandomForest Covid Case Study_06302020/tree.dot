@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="petal width (cm) <= 0.8\ngini = 0.67\nsamples = 96\nvalue = [52, 52, 46]\nclass = setosa", fillcolor="#ffffff"] ;
+1 [label="gini = 0.0\nsamples = 34\nvalue = [52, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal length (cm) <= 4.75\ngini = 0.5\nsamples = 62\nvalue = [0, 52, 46]\nclass = versicolor", fillcolor="#e8fcf0"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal width (cm) <= 1.65\ngini = 0.04\nsamples = 28\nvalue = [0, 48, 1]\nclass = versicolor", fillcolor="#3de684"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 27\nvalue = [0, 48, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5"] ;
+3 -> 5 ;
+6 [label="petal length (cm) <= 4.95\ngini = 0.15\nsamples = 34\nvalue = [0, 4, 45]\nclass = virginica", fillcolor="#8c4be7"] ;
+2 -> 6 ;
+7 [label="sepal length (cm) <= 6.25\ngini = 0.44\nsamples = 8\nvalue = [0, 4, 8]\nclass = virginica", fillcolor="#c09cf2"] ;
+6 -> 7 ;
+8 [label="sepal width (cm) <= 3.1\ngini = 0.24\nsamples = 5\nvalue = [0, 1, 6]\nclass = virginica", fillcolor="#965ae9"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 4\nvalue = [0, 0, 6]\nclass = virginica", fillcolor="#8139e5"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+8 -> 10 ;
+11 [label="petal width (cm) <= 1.65\ngini = 0.48\nsamples = 3\nvalue = [0, 3, 2]\nclass = versicolor", fillcolor="#bdf6d5"] ;
+7 -> 11 ;
+12 [label="gini = 0.0\nsamples = 2\nvalue = [0, 3, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 2]\nclass = virginica", fillcolor="#8139e5"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 26\nvalue = [0, 0, 37]\nclass = virginica", fillcolor="#8139e5"] ;
+6 -> 14 ;
+}
